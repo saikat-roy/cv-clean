@@ -1,122 +1,26 @@
 \documentclass{my_cv}
+\newcommand*{\sectiondir}{resume/}
+
 \begin{document}
 
 \name{Saikat Roy}
 \contact{Hirschberger Strasse 64}{53119 Bonn}{Germany}{saikatroy@uni-bonn.de}{(+49)-16283-19605}
 % \longcontact{123 Broadway}{London}{UK 12345}{john@smith.com}{(000)-111-1111}
 
-
-\section{Objective}
-\hspace{1pt}\parbox{0.99\textwidth}{
-An experienced machine learning (ML) researcher with extensive academic, practical knowledge and high-impact publications. Specialization in Deep Learning (DL) for classification \& segmentation, with extensive understanding of architectural and training paradigms. Actively looking for opportunities as a ML/DL researcher or Data Scientist.
-}
+\import{\sectiondir}{objective.tex}
 
 \vspace{-7pt}
-
-\section{Education}
-
-\edsubsection{University of Bonn}{Bonn, Germany}{Master of Science, Computer Science (Intelligent Systems)}{2017--2020}{Fully-3D Deep CNNs for Segmentation of Neuroanatomy}\vspace{0.1cm}
-\\
-\edsubsection{Jadavpur University}{Kolkata, India}{Master of Engineering, Software Engineering}{2013--2015}{Supervised-Layerwise Training of Deep CNNs for Classification}
-% \vspace{0.1cm}
-% \\
-% \edsubsection{West Bengal University of Technology}{Kolkata, India}{Bachelor of Technology, Computer Science \& Engineering}{2009--2013}{Higher-Order LSB emcoding for audio steganography}
-
+\import{\sectiondir}{education.tex}
 
 \vspace{-15pt}
-
-\section{Work Experience \hfill  {\small \href{https://linkedin.com/in/mrsaikatroy}{\includegraphics[scale=0.075]{LI-Logo.png}}}}
-\worksubsection{German Center for Neurodegenerative Diseases (DZNE)}{Bonn, Germany}{Research Assistant, Image Analysis Group}{2018--2020}{
-    \item[\textbf{--}] Led the development of optimized 3D CNN blocks for full-volume neuroanatomical segmentation through efficient reparameterization
-    \item[\textbf{--}] Developed architectures for optimized memory-usage during training to promote model reusability in semantic segmentation in medical imaging
-    % \item[\textbf{--}] 
-}\vspace{0.1cm}
-\\
-\worksubsection{Jadavpur University}{Kolkata, India}{Junior Research Fellow, Dept. of Computer Science \& Engg.}{2016--2017}{
-    \item[\textbf{--}] Applied recurrent neural networks and classical time series analysis algorithms to the problem of appliance energy usage prediction
-    \item[\textbf{--}] Implemented distributed gradient descent algorithms by developing a PySpark wrapper for a Keras and Flask framework
-}
-\vspace{0.1cm}
-\\
-\worksubsection{Indian Statistical Institute}{Kolkata, India}{Project Trainee (Intern), Computer Vision and Pattern Recognition Unit}{2015--2016}{
-    \item[\textbf{--}] Developed supervised-layerwise deep CNNs for document classification on limited data
-}
+\import{\sectiondir}{work_experience.tex}
 
 \vspace{-12pt}
-
-\section{Skills}
-\item[]
-	Technical Proficiency \vspace{-6pt}
-	\begin{itemize}
-		\resitem{\textbf{Proficient:} Python, NumPy, Scikit-Learn, PyTorch, Git, \LaTeX, Matplotlib}
-		\resitem{\textbf{Familiar:} Linux (Usage and Shell Scripting), C, SciPy, R, SQL, Apache Spark, Matlab, Keras, Pandas, Docker}
-% 		\resitem{Removed:} C++, Java, Scala, Pylearn2, Weka
-	\end{itemize}
-
-\item[]
-Relevant Courses \vspace{-6pt}
-	\begin{itemize}
-	    \resitem{Machine Learning, Technical Neural Networks, Data Science \& Big Data, Distributed Big Data Analytics, Data Analytics and Visualization, Knowledge Graph Analysis, Deep Learning for Visual Recognition, Pattern Recognition, Deep Learning on GPUs, Advanced Deep Learning for Graphics}
-	   % \resitem {\textbf{University of Bonn (M.Sc):} Machine Learning, Technical Neural Networks, Data Science \& Big Data, Distributed Big Data Analytics, Data Analytics and Visualization, Knowledge Graph Analysis, Deep Learning for Visual Recognition, Pattern Recognition, Deep Learning on GPUs, Advanced Deep Learning for Graphics}
-% 		\resitem {\textbf{Jadavpur University (M.E.):} Distributed Databases, Advanced Operating Systems, Advanced Algorithms, Advanced Programming Lab}
-% 		\resitem {\textbf{Bachelors:} Linear Algebra, Probability and Statistics, Calculus (Engineering Mathematics), Data Structures and Algorithms, Theory of Computation, Object-Oriented Programming,}
-	\end{itemize}
-	
-% \item[]
-% 	Linguistic Proficiency \vspace{-6pt}
-% 	\begin{itemize}
-% 		\resitem{English (TOEFL: 114/120), Bengali (Native), Hindi (Basic) , German (Basic)}
-% 	\end{itemize}
-\end{itemize}
-
-
-\section{Publications (Selected)  \hfill { \small \href{https://scholar.google.de/citations?user=dSs0DfoAAAAJ&hl=en}{\includegraphics[scale=0.15]{scholar_logo_64dp.png}}}}
-% \parbox{\textwidth}{
-\begin{itemize}[leftmargin=10pt]
-    % \setlength{\itemsep}{0pt}
-    \item[\textbf{--}] A. Das, \textbf{S. Roy}, U. Bhattacharya, S.K. Parui, ``Document Image Classification with Intra-Domain Transfer Learning and Stacked Generalization of Deep Convolutional Neural Networks,`` \textit{$24^{th}$ International Conference on Pattern Recognition (ICPR)}, Beijing, China, 2018.
-    % \item \textbf{S. Roy}, K. Mishra, S. Basu, U. Maulik, ``A Distributed Multilabel Classification Approach towards Mining Appliance Usage in Smart Homes,`` \textit{IEEE Calcutta Conference (CALCON)}, Kolkata, India, 2017.
-    \item[\textbf{--}] \textbf{S. Roy}, N. Das, M. Kundu, M. Nasipuri, ``Handwritten Isolated Bangla Compound Character Recognition: A new benchmark using a novel deep learning approach,`` \textit{Pattern Recognition Letters, Elsevier}, Vol. 90, pp.15-21, 2017.
-    \item[\textbf{--}] \textbf{S. Roy}, A. Das, U. Bhattacharya, ``Generalized Stacking of Layerwise-trained Deep Convolutional Neural Networks for Document Image Classification,`` \textit{$23^{rd}$ International Conference on Pattern Recognition (ICPR)}, Cancun, Mexico, 2016.
-\end{itemize}
-% }
-
-\section{Projects \hfill {\small  \href{https://github.com/saikat-roy}{\includegraphics[scale=0.03]{GitHub_Logo.png}}}}
-	
-\begin{itemize}[leftmargin=10pt, itemsep=0pt]
-    \item[--] Implementation of \texttt{Autoencoders, GANs} (Advanced Deep Learning course)
-    \item[--] \texttt{Deep CNNs} for Humanoid Robot Part Detection and Localization (Vision Systems lab)
-    \item[--]Implementation of \texttt{Logistic Regression, MLPs, CNNs, VGGNets, ResNets, LSTMs, GRUs, Transfer Learning} based Nets (Vision Systems lab)
-    \item[--] Scalable Evolutionary Algorithm for Association Rule Mining from Ontological Knowledge Bases using Apache Spark (Distributed Big Data lab) 
-    \item[--] \texttt{Deep Convolutional GAN} retraining on ImageNet-1k (Deep Learning lecture assignment)
-    \item[--] Implementation of \texttt{Decision Trees and Rules, NN Classifiers, Ridge Regression} (Machine Learning course)
-   % \item[--] Distributed Regression Models for Appliance Usage Analytics \dotfill 2016
-    \item[--] Deep \texttt{CNN-LSTM} Networks for Electric Load and Wind Power Forecasting
-    % \item[--] CNN based models for Social Network Analysis \dotfill 2016
-    \item[--] Supervised Layerwise training of \texttt{Deep CNNs} for Character and Document Recognition
-    % \item[--] Deep Fully Connected Neural Networks for ECML-PKDD 2015 MLiLS Challenge \dotfill 2015
-    % \item[--] Signature Recognition with High Pressure Points and One-Class Classifiers \dotfill 2014
-    % \item[--] Image Moments and MLPs for Devnagari Character Recognition \dotfill 2012-2013
-\end{itemize}
-
-
-\section{Professional Service}
-
-% \begin{itemize}[leftmargin=10pt]
-%     \item[\textbf{--}] Reviewer: \href{http://portal.core.edu.au/conf-ranks/1169/}{ICPR} (2018), \href{https://link.springer.com/journal/10579}{\textit{Language Resources and Evaluation}, Springer} (2018), \href{https://www.springer.com/journal/12046}{\textit{Sadhana, Springer}} (2019, 2020), \href{https://ieeeaccess.ieee.org/}{\textit{IEEE Access}} (2019)},		\vspace{0.15cm} \href{https://digital-library.theiet.org/content/journals/iet-ifs}{\textit{IET Information Security}} (2020)
-% \end{itemize}
-\begin{itemize}[leftmargin=10pt]
-    \item[\textbf{--}] Reviewer (Selected): ICPR (2018), \textit{Language Resources and Evaluation}, Springer (2018), \textit{Sadhana, Springer} (2019, 2020), \textit{IEEE Access} (2019),		\textit{IET Information Security} (2020)
-\end{itemize}
-
-
-\section{Miscelleaneous}
-\begin{itemize}[leftmargin=10pt, noitemsep]
-    \item[\textbf{--}] GATE Scholarship (2013--2015) for Postgraduate Studies, Govt. of India.
-    \item[\textbf{--}] Erasmus Mundus FUSION Scholarship for PhD mobility between Jadavpur University, India and University of Evora, Portugal (Did not accept offer)
-\end{itemize}
-
-
+\import{\sectiondir}{skills.tex}
+\import{\sectiondir}{publications.tex}
+\import{\sectiondir}{projects.tex}
+\import{\sectiondir}{services.tex}
+\import{\sectiondir}{misc.tex}
 
 % \section{References}
 
