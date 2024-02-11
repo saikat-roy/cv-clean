@@ -78,7 +78,6 @@
 %   \vspace{-5pt}
 %   #2 \hfill #3 \\
 %   #4
-}
 
 \pagestyle{empty}
 
